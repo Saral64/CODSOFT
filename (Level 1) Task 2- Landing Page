@@ -1,0 +1,197 @@
+#HTML CODE
+****************************************************************************************
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Gadget Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Tech Gadget</h1>
+            <nav>
+                <ul>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="container">
+            <h2>Welcome to Tech Gadget</h2>
+            <p>Discover the latest innovation in tech.</p>
+            <a href="#" class="btn">Get Started</a>
+        </div>
+    </section>
+
+    <section id="features">
+        <div class="container">
+            <h2>Features</h2>
+            <div class="feature-item">
+                <h3>Fast Processing</h3>
+                <p>Experience lightning-fast performance with our advanced processor.</p>
+            </div>
+            <div class="feature-item">
+                <h3>High Resolution</h3>
+                <p>Enjoy crystal-clear visuals with a high-resolution display.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Long Battery Life</h3>
+                <p>Stay powered up all day with extended battery life.</p>
+            </div>
+        </div>
+    </section>    
+
+    <section id="about">
+        <div class="container">
+            <h2>About Tech Gadget</h2>
+            <p>Tech Gadget is dedicated to revolutionizing the way you experience technology. We specialize in creating innovative gadgets that enhance your daily life. Our mission is to blend cutting-edge technology with user-friendly design, ensuring each product delivers exceptional performance and reliability.</p>
+            <p>Founded in 2020, Tech Gadget has quickly grown to become a leader in the tech industry. With a passion for innovation and a commitment to quality, we strive to push the boundaries of what's possible in the world of technology.</p>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Tech Gadget. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+*********************************************************************************
+
+#CSS CODE
+
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: orange;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background-color: dimgray;
+    color: white;
+    padding: 10px 0;
+    border-bottom: 3px solid forestgreen;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8em;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: forestgreen;
+}
+
+#hero {
+    background: url('hero-bg.jpg') center center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}
+
+#hero h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: forestgreen;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: darkgreen;
+}
+
+#features {
+    background-color: rgb(174, 253, 137);
+    text-align: center;
+    padding: 80px 0;
+}
+
+.feature-item {
+    margin-bottom: 40px;
+}
+
+.feature-item h3 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.feature-item p {
+    font-size: 1.1em;
+}
+
+#about {
+    background-color: whitesmoke;
+    text-align: center;
+    padding: 80px 0;
+}
+
+footer {
+    background-color: dimgray;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}
